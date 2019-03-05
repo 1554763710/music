@@ -1,0 +1,414 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  font: 14px "微软雅黑";
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  display: block;
+}
+li {
+  list-style: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+img {
+  display: block;
+}
+.clearfix,
+html body #wrap .header .h-top .bths,
+html body #wrap .content .main .content-tap .tap-content,
+html body #wrap .content .main .content-tap .tap-content ul.list {
+  *zoom: 1;
+}
+.clearfix:after,
+html body #wrap .header .h-top .bths:after,
+html body #wrap .content .main .content-tap .tap-content:after,
+html body #wrap .content .main .content-tap .tap-content ul.list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.course-wrap {
+  width: 100%;
+  position: relative;
+}
+.course-wrap > .list {
+  list-style: none;
+  overflow: hidden;
+}
+.course-wrap > .list > li {
+  float: left;
+}
+.course-wrap > .list > li img {
+  display: block;
+  width: 100%;
+}
+.course-wrap > .course-point {
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  text-align: center;
+}
+.course-wrap > .course-point > span {
+  display: inline-block;
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  background: darkgreen;
+  border-radius: 50%;
+}
+.course-wrap > .course-point > span.active {
+  background: red;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?ef4eek');
+  src: url('../fonts/icomoon.eot?ef4eek#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?ef4eek') format('truetype'), url('../fonts/icomoon.woff?ef4eek') format('woff'), url('../fonts/icomoon.svg?ef4eek#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-circle-right:before {
+  content: "\ea42";
+}
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html body #wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #eee;
+  font-size: 0;
+}
+html body #wrap .header {
+  position: relative;
+  width: 100%;
+  background: #333;
+}
+html body #wrap .header .h-top {
+  height: 2rem;
+}
+html body #wrap .header .h-top .logo {
+  float: left;
+  width: 3.55555556rem;
+  height: 1.3037037rem;
+  padding: 0.38518519rem 0.25185185rem 0.31111111rem;
+}
+html body #wrap .header .h-top .logo img {
+  width: 100%;
+}
+html body #wrap .header .h-top .bth {
+  float: left;
+  width: 1.91111111rem;
+  height: 2rem;
+  background: url("../img/menuBtn.png") no-repeat;
+  background-size: 1.21481481rem 3.45185185rem;
+  background-position: center 0.23703704rem;
+}
+html body #wrap .header .h-top .bth.active {
+  background-position: center -1.77777778rem;
+}
+html body #wrap .header .h-top .bths {
+  float: right;
+  padding-top: 0.31111111rem;
+}
+html body #wrap .header .h-top .bths a {
+  float: left;
+  width: 1.64444444rem;
+  height: 1.15555556rem;
+  margin-right: 0.22222222rem;
+  line-height: 1.15555556rem;
+  color: #ccc;
+  background: #690;
+  font-size: 0.62222222rem;
+  text-align: center;
+  border-radius: 0.11851852rem;
+}
+html body #wrap .header .h-top .bths a:nth-child(1) {
+  width: 1.92592593rem;
+  height: 1.3037037rem;
+  margin-right: 0.44444444rem;
+  margin-top: 0.04444444rem;
+  line-height: 1.3037037rem;
+  color: #fff;
+  border-radius: 0.14814815rem;
+  font-weight: bold;
+}
+html body #wrap .header .h-bottom {
+  height: 1.52592593rem;
+  padding: 0.23703704rem;
+}
+html body #wrap .header .h-bottom input[type="text"] {
+  width: 12.28148148rem;
+  height: 1.52592593rem;
+  padding: 0.07407407rem 0.14814815rem;
+  border: 1px solid #5a5a5a;
+  background: #999;
+  font-size: 0.60740741rem;
+  color: #333;
+  border-radius: 0.22222222rem 0 0 0.22222222rem;
+  box-sizing: border-box;
+}
+html body #wrap .header .h-bottom input[type="text"]::-webkit-input-placeholder {
+  color: #333;
+}
+html body #wrap .header .h-bottom input[type="text"]:focus {
+  background: #fff;
+}
+html body #wrap .header .h-bottom input[type="button"] {
+  width: 3.00740741rem;
+  height: 1.52592593rem;
+  background: #414040;
+  color: #fff;
+  font-size: 0.60740741rem;
+  border-radius: 0 0.22222222rem 0.22222222rem 0;
+  font-weight: bold;
+}
+html body #wrap .header .mask {
+  display: none;
+  width: 100%;
+  padding: 0.14814815rem 0;
+  position: absolute;
+  top: 2rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+}
+html body #wrap .header .mask:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #6a6a6a;
+}
+@media only screen and (-webkit-device-pixel-ratio: 2) {
+  html body #wrap .header .mask:after {
+    transform: scaleY(0.5);
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) {
+  html body #wrap .header .mask:after {
+    transform: scaleY(0.333333);
+  }
+}
+html body #wrap .header .mask ul li {
+  display: inline-block;
+  width: 22.5%;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+html body #wrap .header .mask ul li a {
+  color: #fff;
+}
+html body #wrap .content {
+  position: absolute;
+  top: 4rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+html body #wrap .content .main {
+  width: 100%;
+}
+html body #wrap .content .main .nav {
+  width: 100%;
+  height: 2.62222222rem;
+  padding: 0.45925926rem 0 0.20740741rem;
+  border-bottom: 1px solid #6a6a6a;
+  box-sizing: border-box;
+}
+html body #wrap .content .main .nav .list {
+  float: left;
+  white-space: nowrap;
+}
+html body #wrap .content .main .nav .list li {
+  display: inline-block;
+  height: 1.91111111rem;
+  padding: 0 0.56296296rem;
+  font-size: 0.97777778rem;
+  line-height: 1.91111111rem;
+}
+html body #wrap .content .main .nav .list li a {
+  color: #020202;
+}
+html body #wrap .content .main .nav .list li.active {
+  background: #690;
+}
+html body #wrap .content .main .nav .list li.active a {
+  color: #fff;
+}
+html body #wrap .content .main .content-tap {
+  width: 15.4962963rem;
+  margin: 0 auto;
+  background: #fff;
+  font-size: 0.60740741rem;
+  overflow: hidden;
+}
+html body #wrap .content .main .content-tap .tap-title {
+  height: 2rem;
+  line-height: 2rem;
+}
+html body #wrap .content .main .content-tap .tap-title h2 {
+  float: left;
+  height: 100%;
+  line-height: 2rem;
+  font-size: 0.97777778rem;
+  font-weight: bold;
+  color: #333;
+}
+html body #wrap .content .main .content-tap .tap-title a {
+  float: right;
+  height: 100%;
+  line-height: 2rem;
+  color: #333;
+  font-size: 0.74074074rem;
+}
+html body #wrap .content .main .content-tap .tap-title a i {
+  margin-left: 0.07407407rem;
+}
+html body #wrap .content .main .content-tap .tap-title a i.icon-circle-right:before {
+  content: "\ea42";
+}
+html body #wrap .content .main .content-tap .tap-nav {
+  position: relative;
+  width: 100%;
+  height: 1.55555556rem;
+  line-height: 1.55555556rem;
+}
+html body #wrap .content .main .content-tap .tap-nav a {
+  float: left;
+  margin-right: 0.2962963rem;
+  color: #6b6b6b;
+  font-size: 0.65185185rem;
+}
+html body #wrap .content .main .content-tap .tap-nav .sub {
+  position: absolute;
+  bottom: 0.14814815rem;
+  left: 0;
+  width: 1.25925926rem;
+  height: 0.13333333rem;
+  background: #6f900d;
+  transition: 1s transform,1s width;
+}
+html body #wrap .content .main .content-tap .tap-content {
+  width: 300%;
+}
+html body #wrap .content .main .content-tap .tap-content ul {
+  float: left;
+  width: 33.3333333%;
+}
+html body #wrap .content .main .content-tap .tap-content ul.list li {
+  float: left;
+  box-sizing: border-box;
+  width: 7.4962963rem;
+  margin: 0.11851852rem;
+  padding: 0.07407407rem;
+  background: #efefef;
+}
+html body #wrap .content .main .content-tap .tap-content ul.list li a {
+  font-size: 0.59259259rem;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+html body #wrap .content .main .content-tap .tap-content ul.list li a img {
+  width: 100%;
+}
+html body #wrap .content .main .content-tap .tap-content ul.list li div {
+  float: left;
+}
+html body #wrap .content .main .content-tap .tap-content ul.list li div.play {
+  margin-right: 0.2962963rem;
+}
+html body #wrap .content .main .content-tap .tap-content ul.list li div.play i {
+  display: inline-block;
+  width: 0.59259259rem;
+  height: 0.59259259rem;
+  background: url(../img/ice.png) no-repeat;
+  background-position: 0 -0.01481481rem;
+  vertical-align: middle;
+}
+html body #wrap .content .main .content-tap .tap-content ul.list li div.play span {
+  display: inline-block;
+  line-height: 0.59259259rem;
+  vertical-align: middle;
+}
+html body #wrap .content .main .content-tap .tap-content ul.list li div.comment i {
+  display: inline-block;
+  width: 0.59259259rem;
+  height: 0.59259259rem;
+  background: url(../img/ice.png) no-repeat;
+  background-position: 0 -0.81481481rem;
+  vertical-align: middle;
+}
+html body #wrap .content .main .content-tap .tap-content ul.list li div.comment span {
+  display: inline-block;
+  line-height: 0.59259259rem;
+  vertical-align: middle;
+}
+html body #wrap .content .main .content-tap .tap-content ul.loading {
+  opacity: 0;
+  background: url("../img/loading.gif") no-repeat;
+  background-position: center;
+}
+html body #wrap .bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  width: 4px;
+  height: 30px;
+  background: deeppink;
+  opacity: 0;
+  transition: 1s opacity;
+}
